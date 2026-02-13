@@ -1,17 +1,28 @@
-def rev_arr(num_arr:list,emp:list,i:int)-> list:
-    if len(num_arr) != 0:
-        emp.append(num.pop(len(num_arr)-1))
-        return rev_arr(num_arr,emp,i+1)
-    else:
-        return emp
+# def rev_arr(num_arr:list,emp:list,i:int)-> list:
+#     if len(num_arr) != 0:
+#         emp.append(num.pop(len(num_arr)-1))
+#         return rev_arr(num_arr,emp,i+1)
+#     else:
+#         return emp
 
-num = [5,7,3,2,6,1,5,9]
-empty_num = rev_arr(num,[],0)
-print(empty_num)
-
-
+# num = [5,7,3,2,6,1,5,9]
+# empty_num = rev_arr(num,[],0)
+# print(empty_num)
 
 
 # num.reverse()
 # # print(num.reverse())
 # print(num)
+
+def rev_arr(arr,L,R):
+    if L>=R:
+        return
+    arr[L],arr[R] = arr[R],arr[L]
+    rev_arr(arr,L+1,R-1)
+
+
+num = [5,7,3,2,6,1,5,9]
+rev_arr(num,0,len(num)-1)
+print(num)
+
+#TC = O(N/2) SC = O(N/2)
