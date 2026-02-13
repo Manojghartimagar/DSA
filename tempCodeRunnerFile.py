@@ -1,1 +1,0 @@
-def rev_arr(num_arr:list,emp:list,i:int)-> list:
