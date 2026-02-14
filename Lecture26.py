@@ -15,3 +15,4 @@ if bubble_sort([1,2,3,4,5,6,9,7,8]) and True:
     print("The list is sorted.")
 else:
     print("List is not sorted.")
+#git pull origin main --rebase
