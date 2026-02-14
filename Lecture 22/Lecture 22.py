@@ -16,4 +16,4 @@ def Merse_sort(arr):
 
 print(Merse_sort([1,3,4,8,2,0,5,8,9,10,7,3,6]))
 
-#Tc = o(nlog2(n))
+#TC = o(nlog2(n))
