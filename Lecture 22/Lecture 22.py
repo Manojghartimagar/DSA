@@ -15,3 +15,5 @@ def Merse_sort(arr):
     return merge(left,right)
 
 print(Merse_sort([1,3,4,8,2,0,5,8,9,10,7,3,6]))
+
+#Tc = o(log2(n))
