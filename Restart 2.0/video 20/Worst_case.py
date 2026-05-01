@@ -6,5 +6,3 @@ def bubble_sort(nums):
                 nums[j],nums[j+1] = nums[j+1],nums[j]
     return nums
 print(bubble_sort([5,8,1,6,9,2,4]))
-
-# time complexity = o(n*n)
